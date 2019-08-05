@@ -14,13 +14,8 @@
 }
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
   font-family: helveticaLight;
   background-color: #191926;
-  background-image: url("../../images/1.jpg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: contain;
 }
 
 .navbar {
@@ -253,7 +248,10 @@ animation-direction: reverse;
 
 /*hiMyNameIsTjbot*/
 #overview{
-
+  background-image: url("../../images/1.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
 }
 /*buildtjbackground*/
 #gettj, #contribute{
