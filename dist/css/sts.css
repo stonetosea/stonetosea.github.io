@@ -18,159 +18,11 @@ body {
   background-color: #191926;
 }
 
-.navbar {
-  background-color:#FFFFFF;
-  background-image: none;
-  padding: 0 30px;
-  border: 0;
-}
-
-.navbar-nav{
-}
-.navbar .navbar-header{
-  min-width: 300px;
-}
-/*navbar underline color*/
-.navbar ul li a.active{
-  border-bottom: 5px solid #F59B0A;
-  height: 100%;
-}
-.navbar ul li{
-  padding: 0px;
-  height: 100%;
-}
-.navbar ul li a{
-  height: 100%;
-  -webkit-transition: background-color 0.7s ease;
-  -moz-transition: background-color 0.7s ease;
-  -o-transition: background-color 0.7s ease;
-  transition: background-color 0.7s ease;
-  border-bottom: 5px solid #D3D3D3;
-  padding-left: 10px;
-  padding-right: 10px;
-  shadow: 10px 10px 5px grey;
-}
-/*navbar colors*/
-.navbar ul li a:hover{
-  background-color: #D3D3D3;
-  color: #fff;
-  border-bottom: 5px solid #F59B0A;
-}
-
-.navbar ul li.active{
-  padding: 0px;
-}
-
-/*navbar text color*/
-.navbar-nav a{
-  color: #41455C ;
-}
-
-.navbar-toggle .icon-bar {
-  background-color: #98777b;
-
-}
-
-@media screen and (max-width: 390px) {
-  .navbar-right {
-    font-size: 11px;
-  }
-  .navbar ul li a {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .navbar-right {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-right {
-    margin-right: 0 !important;
-    float: right !important;
-  }
-  .navbar-nav>li {
-    float: left;
-  }
-
-  .nametj {
-    margin-top: 130px !important;
-  }
-}
-
 @media screen and (max-width: 1024px) {
-
-  .aboutimg > img {
-    max-width: 200px;
-  }
-
-  .jumbo> img {
-    max-width: 500px;
-  }
   
-  .thumbnail {
+  .thumbnail , .img-responsive  {
     max-width: 450px;
   } 
-}
-
-@media (min-width: 768px) {
-  .navbar-right {
-    margin-right: 0 !important;
-  }
-}
-
-
-/*fade TJBot image*/
-#fade img {
-
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-@keyframes fadeFadeInOut {
-  0% {
-  opacity:1;
-}
-45% {
-opacity:1;
-}
-55% {
-opacity:0;
-}
-100% {
-opacity:0;
-}
-}
-
-#fade img.top {
-animation-name: fadeFadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: 1;
-animation-duration: 3s;
-animation-direction: reverse;
-}
-
-
-.tjheaderbox{
-  padding: 8px 0px 0px 0px;
-  height: 100%;
-}
-
-.watson{
-  font-family: helveticaBold;
-}
-.tjheader{
-  padding: 7px 10px 10px 10px;
-  font-size: 18px ;
-  color: #000;
-  font-family: helveticaLight;
-  display: inline-block;
-  white-space: nowrap;
 }
 
 /*header color*/
@@ -212,12 +64,6 @@ animation-direction: reverse;
   display: block;
   margin-top: 10px ;
 }
-.byibm{
-  padding: 5px 10px 5px 10px;
-  font-size: 16px ;
-  font-weight: bold;
-  color: #41455C;
-}
 
 .jumbo {
   position: relative;
@@ -238,13 +84,6 @@ animation-direction: reverse;
 
 }
 
-.aboutimg{
-  padding-top: 100px;
-}
-
-.aboutimg > img {
-  width:80%;
-}
 
 /*hiMyNameIsTjbot*/
 #overview{
@@ -258,17 +97,6 @@ animation-direction: reverse;
   background-color: #eee;
 }
 
-
-/*swiftplayground*/
-#swift{
-  background-color:#fff;
-  background-opacity: ;
-}
-
-/*about TJBot*/
-#about{
-  background-color: #FFFFFF;
-}
 
 /*background color*/
 .gettjrowback{
@@ -287,24 +115,6 @@ animation-direction: reverse;
   text-align: center;
   font-size: 20px;
   cursor: pointer;
-}
-
-.buildTJ:hover{
-  color: #fff;
-
-}
-
-#IBMfooter{
-background-color:#FFFFFF;
-}
-
-.reciperowback{
-  background-image: url("../../images/recipebg.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  height: 100%;
-  padding: 30px;
-  display: block;
 }
 
 /*main text color*/
@@ -393,35 +203,31 @@ ul.icons li:last-child {
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
 }
-@keyframes fadein {
-  from {
-    opacity:0;
-  }
-  to {
-    opacity:1;
-  }
+.caption div {
+    box-shadow: 0 0 5px #C8C8C8;
+    transition: all 0.3s ease 0s;
 }
-@-moz-keyframes fadein { /* Firefox */
-  from {
-    opacity:0;
-  }
-  to {
-    opacity:1;
-  }
+.img-circle {
+    border-radius: 50%;
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  from {
-    opacity:0;
-  }
-  to {
-    opacity:1;
-  }
+.img-circle {
+    border-radius: 0;
 }
-@-o-keyframes fadein { /* Opera */
-  from {
-    opacity:0;
-  }
-  to {
-    opacity: 1;
-  }
+
+.ratio {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 0;
+    padding-bottom: 50%;
+    position: relative;
+    width: 50%;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
 }
